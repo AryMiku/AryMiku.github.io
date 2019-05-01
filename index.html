@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <style>
+    .ui-helper-center {
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>CE</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">CE ที่นิยม</a></li>
+    <li><a data-toggle="tab" href="#menu1">NP</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <br>
+      <ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#bank1">NP เริ่มต้น</a></li>
+        <li><a data-toggle="tab" href="#bank2">เมื่อตัวละครตายเพิ่ม NP</a></li>
+        <li><a data-toggle="tab" href="#bank3">เด้งเกจ NP ไวขึ้น</a></li>
+        <li><a data-toggle="tab" href="#bank4">โจมตีแล้วเพิ่ม NP</a></li>
+        <li><a data-toggle="tab" href="#bank5">เพิ่มความแรง NP</a></li>
+        <li><a data-toggle="tab" href="#bank6">เด้งเกจ NP เอง</a></li>
+        <li><a data-toggle="tab" href="#bank7">OverChange ของ NP</a></li>
+      </ul>
+      <div class="tab-content">
+          <div id="bank1" class="tab-pane fade">
+              NP เริ่มต้น
+          </div>
+          <div id="bank2" class="tab-pane fade">
+            เมื่อตัวละครตายเพิ่ม NP
+          </div>
+          <div id="bank3" class="tab-pane fade">
+            เด้งเกจ NP ไวขึ้น
+          </div>
+          <div id="bank4" class="tab-pane fade">
+              โจมตีแล้วเพิ่ม NP
+          </div>
+          <div id="bank5" class="tab-pane fade">
+              เพิ่มความแรง NP
+          </div>
+          <div id="bank6" class="tab-pane fade">
+              เด้งเกจ NP เอง
+          </div>
+          <div id="bank7" class="tab-pane fade">
+              OverChange ของ NP
+          </div>
+      </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+
+  </div>
+  
+  
+</div>
+
+<script>
+    $(document).ready(function(){
+    $( "#bank1" ).load( "OverchangeNP.html" );
+   });
+  
+</script>
+
+</body>
+</html>
